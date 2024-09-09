@@ -1,2 +1,7 @@
 # My dotfiles
-Configuration files
+
+## Installation
+
+## Recommendations
+
+## Troubleshooting
