@@ -1,0 +1,55 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20241005_212052
+====================================================================================================
+
+1     |Info:    Found file: Gruvbox.orp attempting to validate header
+1     |Info:    Valid v4 profile found for Gruvbox
+1006  |Info:    ------------------------------------------------------
+1006  |Info:    |               Start device detection               |
+1006  |Info:    ------------------------------------------------------
+1006  |Info:    Initializing HID interfaces: Success
+1010  |Info:    ------------------------------------------------------
+1010  |Info:    |             Detecting I2C interfaces               |
+1010  |Info:    ------------------------------------------------------
+1010  |Info:    Registering I2C interface: /dev/i2c-3 Device 1002:73A5 Subsystem: 1EAE:6950
+1010  |Info:    Registering I2C interface: /dev/i2c-1 Device 1002:73A5 Subsystem: 1EAE:6950
+1010  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1010  |Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+1010  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1010  |Info:    Registering I2C interface: /dev/i2c-6 Device 0000:0000 Subsystem: 0000:0000
+1010  |Info:    Registering I2C interface: /dev/i2c-4 Device 1002:73A5 Subsystem: 1EAE:6950
+1010  |Info:    Registering I2C interface: /dev/i2c-2 Device 1002:73A5 Subsystem: 1EAE:6950
+1011  |Info:    Registering I2C interface: /dev/i2c-0 Device 1002:73A5 Subsystem: 1EAE:6950
+1011  |Info:    Registering I2C interface: /dev/i2c-9 Device 8086:A323 Subsystem: 1043:8694
+1011  |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+1011  |Info:    Registering I2C interface: /dev/i2c-7 Device 0000:0000 Subsystem: 0000:0000
+1011  |Info:    Registering I2C interface: /dev/i2c-5 Device 1002:73A5 Subsystem: 1EAE:6950
+1011  |Info:    ------------------------------------------------------
+1011  |Info:    |               Detecting I2C devices                |
+1011  |Info:    ------------------------------------------------------
+1264  |Info:    [ENE DRAM] Registering RGB controller
+1457  |Info:    [ENE DRAM] Registering RGB controller
+1821  |Info:    ------------------------------------------------------
+1821  |Info:    |               Detecting I2C PCI devices            |
+1821  |Info:    ------------------------------------------------------
+1822  |Info:    ------------------------------------------------------
+1822  |Info:    |               Detecting HID devices                |
+1822  |Info:    ------------------------------------------------------
+5253  |Info:    [NZXT Smart Device V2] Registering RGB controller
+5316  |Info:    [ASUS ROG STRIX Z390-F GAMING Addressable] Registering RGB controller
+5369  |Info:    [Glorious Model O / O- Wireless] Registering RGB controller
+5369  |Info:    ------------------------------------------------------
+5369  |Info:    |            Detecting libusb HID devices            |
+5369  |Info:    ------------------------------------------------------
+5386  |Info:    ------------------------------------------------------
+5386  |Info:    |              Detecting other devices               |
+5386  |Info:    ------------------------------------------------------
+5390  |Info:    ------------------------------------------------------
+5390  |Info:    |                Detection completed                 |
+5390  |Info:    ------------------------------------------------------
+5391  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-9, address 0x71
+5391  |Info:    Profile loading: Succeeded for ENE DRAM @ I2C: /dev/i2c-9, address 0x73
+5391  |Info:    Profile loading: Succeeded for NZXT Smart Device V2 @ HID: /dev/hidraw6
+5391  |Info:    Profile loading: Succeeded for ASUS ROG STRIX Z390-F GAMING Addressable @ HID: /dev/hidraw7
+5391  |Info:    Profile loading: Succeeded for Glorious Model O / O- Wireless @ HID: /dev/hidraw4

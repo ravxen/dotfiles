@@ -1,0 +1,166 @@
+/* General */
+
+* {
+    font-family: Iosveka NF, Iosevka;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Waybar */
+window#waybar {
+    background: rgba(60, 56, 54, 0);
+    border-radius: 8px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+
+/* Buttons */
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+/* Modules Class */
+.modules-left, .modules-center, .modules-right{
+    background: rgba(40, 40, 40, 0.9);
+    border-radius: 8px;
+    padding: 2px 8px 2px 8px;
+}
+
+.modules-center {
+    background-color: transparent;
+    border: 0px solid #504945
+}
+
+
+/* General styling for modules */
+#clock,
+#tray,
+#custom-notification,
+#custom-arch,
+#cpu,
+#memory,
+#temperature,
+#window,
+#power-profiles-daemon {
+    /* background-color: #282828; */
+    border-radius: 8px;
+}
+
+/* Single Modules */
+#cpu {
+    padding-right: 9px;
+}
+
+#temperature {
+    padding-right: 3px;
+}
+
+#memory {
+    padding-right: 10px;
+}
+
+#network {
+    padding-right: 6px;
+}
+
+#pulseaudio {
+    padding-right: 3px;
+}
+
+#workspaces button {
+    color: #a89984;
+    border-radius: 0px;
+}
+
+#workspaces button.active {
+    color: #b8bb26;
+}
+
+#window {
+    background-color: rgba(40, 40, 40, 0);
+    padding: 5px 8px 5px 8px;
+    text-shadow: 1px 1px rgb(22, 24, 25);
+    /* border: 2px solid #504945 */
+}
+
+#power-profiles-daemon {
+    color: #d79921;
+    padding-right: 6px;
+    transition: 0.2s;
+}
+
+#power-profiles-daemon:hover {
+    color: #fabd2f;
+    transition: 0.2s;
+}
+
+    #power-profiles-daemon.balanced {
+        padding-right: 6px;
+        color: #458588;
+        transition: 0.2s;
+    }
+
+    #power-profiles-daemon.balanced:hover {
+        color: #83a598;
+        transition: 0.2s;
+    }
+
+    #power-profiles-daemon.power-saver {
+        padding-right: 6px;
+        color: #689d6a;
+        transition: 0.2s;
+    }
+
+    #power-profiles-daemon.power-saver:hover {
+        color: #8ec07c;
+        transition: 0.2s;
+    }
+
+
+/* Custom Modules */
+#custom-notification {
+    padding-right: 5px;
+}
+
+#custom-arch {
+    padding-right: 5px;
+}
+
+#custom-separator {
+    color: #fbf1c7;
+}
+
+#custom-btop {
+    padding-right: 5px;
+}
+
+#custom-poweroff {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#custom-reboot {
+    padding-right: 15px;
+}
+
+#custom-bios {
+    padding-right: 8px;
+}
+
+#custom-sleep {
+    padding-right: 15px;
+}
+
+#custom-logout {
+    padding-right: 6px;
+}

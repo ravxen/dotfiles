@@ -1,0 +1,277 @@
+[{
+// 
+// 
+// First Monitor
+// 
+// 
+    "layer": "top",
+    "height": 25,
+    "margin-right": 10,
+    "margin-left": 10,
+    "margin-top": 5,
+    "margin-bottom": 0,
+    "spacing": 5,
+    "output": "DP-2",
+    // Left
+    "modules-left": ["group/system", "custom/separator","hyprland/workspaces", "custom/separator", "tray"],
+        // Modules
+        "group/system": {
+            "orientation": "horizontal",
+            "drawer": {
+                "transition-duration": 500,
+                "children-class": "not-power",
+                "transition-left-to-right": true
+            },
+            "modules": [
+                    "custom/arch",
+                    "custom/poweroff",
+                    "custom/reboot",
+                    "custom/bios",
+                    "custom/sleep",
+                    "custom/logout"
+            ]
+        },
+        "custom/arch": {
+            "format": "<span size='large' color='#1793d1'>󰣇</span>",
+            "tooltip": false
+        },
+        "custom/poweroff": {
+            "format": "<span size='x-large' color='#fb4934'>󰐥</span>",
+            "on-click": "systemctl poweroff",
+            "tooltip": true,
+            "tooltip-format": "Shutdown"
+        },
+        "custom/reboot": {
+            "format": "<span size='large' color='#fabd2f'></span>",
+            "on-click": "systemctl reboot",
+            "tooltip": true,
+            "tooltip-format": "Reboot"
+        },
+        "custom/bios": {
+            "format": "<span size='large' color='#d3869b'>󰢻</span> ",
+            "on-click": "systemctl reboot --firmware-setup",
+            "tooltip": true,
+            "tooltip-format": " Reboot into\nBIOS Settings"
+        },
+        "custom/sleep": {
+            "format": "<span size='x-large' color='#83a598'>󰤁</span>",
+            "on-click": "systemctl sleep",
+            "tooltip": true,
+            "tooltip-format": "Sleep"
+        },
+        "custom/logout": {
+            "format": "<span size='x-large' color='#a89984'></span>",
+            "on-click": "killall Hyprland",
+            "tooltip": true,
+            "tooltip-format": "Logout"
+        },
+        "custom/separator": {
+            "format": "|",
+            "tooltip": false
+        },
+        "hyprland/workspaces": {
+            "format": "{icon}",
+            "on-click": "activate",
+            "sort-by-number": true,
+            "disable-scroll": true,
+            "all-outputs": true,
+            "warp-on-scroll": false
+        },
+        "tray": {
+            "icon-size": 16,
+            "show-passive-items": true,
+            "spacing": 3 
+        },
+    // Center
+    "modules-center": ["hyprland/window"],
+        //  Modules
+        "hyprland/window": {
+            "format": "{initialTitle}",
+            "max-length": 50,
+            "icon": true,
+            "icon-size": 15,
+            "all-outputs": false
+        },
+    // Right
+    "modules-right": ["power-profiles-daemon","custom/separator", "pulseaudio", "network", "custom/separator", "clock", "custom/separator", "custom/notification"],
+        // Modules
+        "custom/notification": {
+            "format": "{icon}",
+            "format-icons": {
+                "notification": "<span size='large' color='#d79921'>󰂚</span><span size='large' foreground='#cc241d'><sup></sup></span>",
+                "none": "<span size='large' color='#d79921'>󰂚</span>",
+                "dnd-notification": "<span size='large' color='#928374'>󰂛</span><span foreground='#cc241d'><sup></sup></span>",
+                "dnd-none": "<span size='large' color='#928374'>󰂛</span>"
+            },
+            "return-type": "json",
+            "exec-if": "which swaync-client",
+            "exec": "swaync-client -swb",
+            "on-click": "swaync-client -t -sw",
+            "on-click-right": "swaync-client -d -sw",
+            "escape": true,
+            "tooltip": false
+        },
+        "clock": {
+            "timezone": "Europe/Berlin",
+            "format-alt": "{:%Y-%m-%d}",
+            "tooltip": false
+        },
+        "power-profiles-daemon": {
+        "format": "{icon}",
+            "format-icons": {
+                "default": "<span></span>",
+                "performance": "<span></span>",
+                "balanced": "<span></span>",
+                "power-saver": "<span></span>"
+            },
+        "tooltip-format": "{profile}",
+        "tooltip": true
+        },
+        "network": {
+            "format": "{icon}",
+                "format-ethernet": "{ifname} <span size='x-large' color='#98971a'>󰱓</span>",
+                "format-disconnected": "<span size='x-large' color='#cc241d'>󰅛</span>",
+            "tooltip": false,
+            "on-click": "nm-connection-editor"
+        },
+        "pulseaudio": {
+            "format": "{volume}% {icon}  {format_source}",
+            "format-bluetooth": "{volume} {icon}<span size='large'>󰂯</span>",
+            "format-source": "{volume}% <span size='large' color='#98971a'></span>",
+            "format-source-muted": "{volume}% <span size='large' color='#98971a'></span>",
+                "format-icons": {
+                    "headphone": "<span size='large'></span>",
+                    "headset": "<span size='large' color='#98971a'></span>",
+                    "phone": "<span size='large'></span>",
+                    "phone-muted": "<span size='large'></span>"
+                },
+            "on-click": "pavucontrol"
+        }
+// 
+// 
+// Second Monitor
+// 
+// 
+}, {
+    "layer": "top",
+    "height": 30,
+    "margin-right": 10,
+    "margin-left": 10,
+    "margin-top": 10,
+    "margin-bottom": 0,
+    "spacing": 10,
+    "output": "HDMI-A-1",
+    // Left
+    "modules-left": ["group/system", "custom/separator", "hyprland/workspaces"],
+        "group/system": {
+            "orientation": "horizontal",
+            "drawer": {
+                "transition-duration": 500,
+                "children-class": "not-power",
+                "transition-left-to-right": true
+            },
+            "modules": [
+                    "custom/arch",
+                    "custom/poweroff",
+                    "custom/reboot",
+                    "custom/bios",
+                    "custom/sleep",
+                    "custom/logout"
+            ]
+        },
+        "custom/arch": {
+            "format": "<span size='large' color='#1793d1'>󰣇</span>",
+            "tooltip": false
+        },
+        "custom/poweroff": {
+            "format": "<span size='x-large' color='#fb4934'>󰐥</span>",
+            "on-click": "systemctl poweroff",
+            "tooltip": true,
+            "tooltip-format": "Shutdown"
+        },
+        "custom/reboot": {
+            "format": "<span size='large' color='#fabd2f'></span>",
+            "on-click": "systemctl reboot",
+            "tooltip": true,
+            "tooltip-format": "Reboot"
+        },
+        "custom/bios": {
+            "format": "<span size='large' color='#d3869b'>󰢻</span> ",
+            "on-click": "systemctl reboot --firmware-setup",
+            "tooltip": true,
+            "tooltip-format": " Reboot into\nBIOS Settings"
+        },
+        "custom/sleep": {
+            "format": "<span size='x-large' color='#83a598'>󰤁</span>",
+            "on-click": "systemctl sleep",
+            "tooltip": true,
+            "tooltip-format": "Sleep"
+        },
+        "custom/logout": {
+            "format": "<span size='x-large' color='#a89984'></span>",
+            "on-click": "killall Hyprland",
+            "tooltip": true,
+            "tooltip-format": "Logout"
+        },
+        "custom/separator": {
+            "format": "|",
+            "tooltip": false
+        },
+        "hyprland/workspaces": {
+            "format": "{icon}",
+            "on-click": "activate",
+            "sort-by-number": true,
+            "disable-scroll": true,
+            "all-outputs": true,
+            "warp-on-scroll": false
+        },
+    // Center
+    "modules-center": [""],
+    // Right
+    "modules-right": ["custom/gpu-usage" , "custom/vram-usage", "memory", "temperature", "cpu", "custom/separator", "clock"],
+        // Modules
+        // "group/hardware": {
+        //     "orientation": "horizontal",
+        //     "drawer": {
+        //         "transition-duration": 500,
+        //         "children-class": "not-power",
+        //         "transition-left-to-right": false
+        //     },
+        //     "modules": [
+        //             "custom/btop",
+        //             "memory",
+        //             "temperature",
+        //             "cpu"
+        //     ]
+        // },
+        "cpu": {
+            "format": "{usage}% <span size='large'color='#458588'></span>",
+            "interval": 5,
+            "max-length": 10,
+            "tooltip": true
+        },
+        "temperature": {
+            "format": "{temperatureC}°C <span size='large' color='#689d6a'></span>",
+            "format-critical": "{temperatureC}°C <span size='large' color='#cc241d'></span>",
+            "critical-threshold": 85,
+            "interval": 1,
+            "hwmon-path": "/sys/class/hwmon/hwmon6/temp1_input",
+            "max-length": 10,
+            "tooltip": false
+        },
+        "memory": {
+            "format": "{used:0.1f}Gb <span size='large'color='#b16286'></span>",
+            "interval": 5,
+            "max-length": 10,
+            "tooltip": false
+        },
+        "custom/btop": {
+            "format": ""
+        },
+        "custom/gpu-usage": {
+            "exec": "cat /sys/class/hwmon/hwmon2/device/gpu_percent",
+            "format": "{exec}% 󰍹",
+            "return-type": "",
+            "interval": 1
+        }
+}]
