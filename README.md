@@ -12,8 +12,7 @@ Shel: zsh + oh-my-zsh
 Window Manager: hyprland
 Status Bar: waybar
 Application Launcher: rofi
-📂 File Manager: yazi
-
+📂 File Manager: yazi\n
 Notification Center: swaync
 
 ## Troubleshooting
