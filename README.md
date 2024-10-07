@@ -9,10 +9,15 @@ Currently WIP
 
 ## Applications
 Shel: zsh + oh-my-zsh
-Window Manager: hyprland
+
+ Window Manager: hyprland
+
 Status Bar: waybar
+
 Application Launcher: rofi
-📂 File Manager: yazi\n
+
+📂 File Manager: yazi
+
 Notification Center: swaync
 
 ## Troubleshooting
