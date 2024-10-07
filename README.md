@@ -13,6 +13,7 @@ Window Manager: hyprland
 Status Bar: waybar
 Application Launcher: rofi
 File Manager: yazi
+
 Notification Center: swaync
 
 ## Troubleshooting
