@@ -1,0 +1,1 @@
+/home/jschmidt/.config/spicetify/Themes/Dribbblish/uninstall.ps1

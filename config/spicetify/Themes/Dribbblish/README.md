@@ -1,0 +1,1 @@
+/home/jschmidt/.config/spicetify/Themes/Dribbblish/README.md
