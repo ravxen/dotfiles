@@ -1,1 +1,0 @@
-/home/jschmidt/.config/spicetify/Themes/StarryNight/README.md
