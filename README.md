@@ -4,7 +4,7 @@ Welcome to my dotfiles page! I'm new to the whole ricing, editing configs and cr
 
 Current Colorscheme: Gruvbox
 
-Latest Update: 07.10.2024
+Latest Update: 09.10.2024
 
 ## Installation
 Available Colorschemes:
@@ -16,7 +16,7 @@ Available Colorschemes:
 Script is not available as of now.
 
 ## Applications
-Shel: zsh + oh-my-zsh
+Shell: zsh + oh-my-zsh
 
 Window Manager: hyprland
 
@@ -27,5 +27,13 @@ Application Launcher: rofi
 File Manager: yazi
 
 Notification Center: swaync
+
+--
+
+Audio: pipewire + pavucontrom
+
+Network Manager: networkmanager + nm-connection-editor
+
+Bluetooth: bluez + blueman
 
 ## Troubleshooting
