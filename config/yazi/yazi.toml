@@ -1,1 +1,4 @@
-/home/jschmidt/.config/yazi/yazi.toml
+[opener]
+edit = [
+	{ run = 'nano "$@"', block = true, for = "unix" },
+]

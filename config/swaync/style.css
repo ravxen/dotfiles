@@ -1,1 +1,254 @@
-/home/jschmidt/.config/swaync/style.css
+@define-color cc-bg #504945;
+@define-color noti-border-color #928374;
+@define-color noti-bg #3c3836;
+@define-color noti-bg-darker #504945;
+@define-color noti-bg-hover rgb(27, 27, 43);
+@define-color noti-bg-focus rgba(27, 27, 27, 0.6);
+@define-color text-color #ebdbb2;
+@define-color text-color-disabled #ebdbb2;
+@define-color bg-selected #fabd2f;
+
+* {
+    font-family: Iosevka;
+    font-weight: bold;
+	font-size: 13px;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* Control Center Styling */
+.control-center {
+    margin-top: 10px;
+    background: rgba(40,40,40,0.9);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 3px #161819;
+}
+    .control-center-list {
+        background: transparent
+    }
+    .control-center-list-placeholder {
+        opacity: .5
+    }
+    .control-center .notification-row:focus, .control-center .notification-row:hover {
+        opacity: 1;
+        background: #282828;
+    }
+
+
+/* Widgets */
+.widget-title {
+    color: #ebdbb2;
+    font-size: 12px;
+    background: #504945;
+    border-radius: 8px;
+    padding-left: 10px; padding-right: 10px;
+    margin: 10px;
+}
+    .widget-title>button {
+        background-color: #3c3836;
+        border-radius: 8px;
+        margin-right: -2px; margin-top: 5px; margin-bottom: 5px;
+        padding-left: 8px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;
+        transition: 0.2s;
+    }
+    .widget-title>button:hover {
+        background: #cc241d;
+        transition: 0.2s;
+    }
+
+.widget-dnd {
+    background: #504945;
+    padding-left: 10px; padding-right: 10px;
+    margin: 10px; margin-top: 0px;
+    border-radius: 8px;
+    font-size: large;
+    color: #f2e5bc;
+}
+    .widget-dnd>switch {
+        margin-right: -2px; margin-top: 5px; margin-bottom: 5px;
+        padding-left: 3px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px;
+        border-radius: 8px;;
+        background: #3c3836;
+        transition: 0.2s;
+    }
+    .widget-dnd>switch:hover {
+        border-radius: 8px;
+        background: #fabd2f;
+        transition: 0.2s;
+    }
+    .widget-dnd>switch:checked {
+        background: #d79921;
+        transition: 0.2s;
+    }
+    .widget-dnd>switch slider {
+        background: #ebdbb2;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+    .widget-dnd>switch:checked slider {
+        background: #ebdbb2;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+    .widget-dnd>switch:checked:hover {
+        background-color: #fabd2f;
+        transition: 0.2s;
+    }
+
+.widget-buttons-grid {
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #504945;
+    padding: 5px;
+}
+    .widget-buttons-grid>flowbox>flowboxchild>button {
+        background: #282828;
+        border-radius: 8px;
+        transition: 0.2s;
+        padding-left: 25px; padding-right: 25px;
+    }
+    .widget-buttons-grid>flowbox>flowboxchild>button:hover {
+        background: #458588;
+        transition: 0.2s;
+    }
+
+.widget-volume {
+    color: #ebdbb2;
+    margin-top: 0px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    background-color: #504945;
+}
+
+    .widget-volume slider {
+        background-color: #ebdbb2;
+    }
+
+    .widget-volume>button {
+        background-color: white;
+    }
+
+.per-app-volume {
+    color: #bdae98;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border-radius: 8px;
+    background-color: #504945;
+}
+
+.notification {
+    margin-top: 0px;
+    background: rgba(40,40,40,0.7);
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 1px #161819;
+}
+
+    .notification:hover {
+        background: #504945;
+    }
+
+.notification-content {
+    background: #282828;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 8px;
+    margin: 0px;
+}
+
+
+.notification-group-collapse-button {
+    padding: 0px;
+    color: #ebdbb2;
+    background-color: #458588;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.notification-group-collapse-button:hover {
+    background-color: #83a598;
+    transition: 0.2s;
+}
+
+.notification-group-close-all-button {
+    background-color: #cc241d;
+    color: #ebdbb2;
+    border-radius: 8px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 5px;
+    transition: 0.2s;
+}
+.notification-group-close-all-button:hover {
+    background-color: #fb4934;
+    transition: 0.2s;
+}
+
+.notification-group {
+    color: #ebdbb2;
+    padding: 0px;
+}
+.notification-group:focus {
+    outline: none;
+}
+
+.close-button {
+    background: #cc241d;
+    color: #ebdbb2;
+    text-shadow: none;
+    padding: 0px 0px 0px 0px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: 0.2s;
+}
+
+.close-button:hover {
+    box-shadow: none;
+    background: #fb4934;
+    transition: 0.2s;
+}
+
+.notification-action {
+    color: #ebdbb2;
+    /* border: 2px solid #928374; */
+    border-top: none;
+    border-radius: 5px;
+    background: #32302F;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: #ebdbb2;
+    background: #32302F;
+}
+
+.summary {
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #ebdbb2;
+    background-color: #282828;
+    border-radius: 8px;
+}
+
+.time {
+    font-family: Iosevka Term;
+    font-size: 10px;
+    color: #d79921;
+    margin-right: 24px
+}
+
+.body {
+    margin: 5px 0px 5px 0px;
+    font-size: 12px;
+    color: #ebdbb2;
+    background-color: #282828;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.floating-notifications {
+    background: transparent;
+}
+

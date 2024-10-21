@@ -1,1 +1,229 @@
-/home/jschmidt/.config/waybar/style.css
+/* General */
+
+* {
+    font-family: Iosevka, Iosevka NF;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    border: 0px solid;
+}
+
+/* Waybar */
+window#waybar {
+    background: rgba(40, 40, 40, 0.0);
+}
+
+    window#waybar > box {
+        border-radius: 8px;
+        margin: 4px 8px 8px 8px;
+        background-color: rgba(40, 40, 40, 0.9);
+        box-shadow: 0px 2px 4px 0px #161819;
+    }
+
+    window#waybar.empty #window {
+        background-color: transparent;
+    }
+
+/* Buttons */
+button {
+    box-shadow: inset 0 -3px transparent;
+}
+    button:hover {
+        background: inherit;
+    }
+
+/* Modules Class */
+.modules-left > widget:first-child > #system{
+    margin-left: 5px;
+}
+    /* Second Monitor */
+    .modules-left > widget:first-child > #workspaces{
+        margin-left: 5px;
+    }
+
+.modules-right > widget:last-child > #custom-notification {
+    margin-right: 5px;
+}
+    /* Second Monitor */
+    .modules-right > widget:last-child > #cpu {
+        margin-right: 5px;
+    }
+
+/* General styling for modules */
+#clock, #cpu, #temperature, #memory, #network, #pulseaudio, #workspaces, #window, #power-profiles-daemon, #custom-notification, #custom-arch, #custom-btop, #custom-poweroff, #custom-reboot, #custom-bios, #custom-sleep, #custom-logout, #language {
+    background-color: #504945;
+    border-radius: 8px;
+    margin-bottom: 5px; margin-top: 5px;
+}
+
+/* Single Modules */
+#clock {
+    padding: 0px 7px 0px 7px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#tray {
+    margin-left: 3px;
+}
+
+#cpu {
+    padding-left: 7px;
+    padding-right: 13px;
+}
+
+#temperature {
+    padding-left: 7px;
+    padding-right: 8px;
+}
+
+#memory {
+    padding-left: 7px;
+    padding-right: 15px;
+}
+
+#network {
+    padding: 0px 15px 0px 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: -3px;
+}
+
+#language {
+    padding: 0px 7px 0px 7px;
+}
+
+#pulseaudio {
+    padding: 0px 5px 0px 7px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#workspaces {
+    padding: 0px 5px 0px 5px;
+    transition: 0.2s;
+}
+    #workspaces button {
+        color: #a89984;
+        transition: 0.2s;
+    }
+        #workspaces button.active {
+            color: #d79921;
+            transition: 0.2s;
+        }
+
+#window {
+    padding: 5px 8px 5px 8px;
+}
+
+#power-profiles-daemon {
+    color: #d79921;
+    padding: 0px 8px 0px 5px;
+    transition: 0.2s;
+}
+    #power-profiles-daemon:hover {
+        color: #fabd2f;
+        transition: 0.2s;
+    }
+        #power-profiles-daemon.balanced {
+            padding-right: 10px;
+            color: #458588;
+            transition: 0.2s;
+        }
+            #power-profiles-daemon.balanced:hover {
+                color: #83a598;
+                transition: 0.2s;
+            }
+        #power-profiles-daemon.power-saver {
+            padding-right: 11px;
+            color: #689d6a;
+            transition: 0.2s;
+        }
+            #power-profiles-daemon.power-saver:hover {
+                color: #8ec07c;
+                transition: 0.2s;
+            }
+
+/* Custom Modules */
+#custom-notification {
+    padding: 0px 10px 0px 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: -3px;
+}
+
+#custom-arch {
+    color: #1793d1;
+    padding: 0px 10px 0px 5px;
+    transition: 0.2s;
+}
+    #custom-arch:hover {
+        color: #1ba8ef;
+        transition: 0.2s;
+    }
+
+#custom-poweroff {
+    color: #cc241d;
+    background-color: transparent;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 3px;
+    padding-left: 7px;
+    padding-right: 10px;
+    transition: 0.2s;
+}
+    #custom-poweroff:hover {
+        color: #fb4934;
+        transition: 0.2s;
+    }
+
+#custom-reboot {
+    color: #d65d0e;
+    background-color: transparent;
+    border-radius: 0px;
+    padding-left: 4px;
+    padding-right: 14px;
+    transition: 0.2s;
+}
+    #custom-reboot:hover {
+        color: #fe8019;
+        transition: 0.2s;
+    }
+
+#custom-bios {
+    color: #b16286;
+    background-color: transparent;
+    border-radius: 0px;
+    padding-right: 8px;
+    transition: 0.2s;
+}
+    #custom-bios:hover {
+        color: #d3869b;
+        transition: 0.2s;
+    }
+
+#custom-sleep {
+    color: #d79921;
+    background-color: transparent;
+    border-radius: 0px;
+    padding-right: 15px;
+    transition: 0.2s;
+}
+    #custom-sleep:hover {
+        color: #fabd2f;
+        transition: 0.2s;
+    }
+
+#custom-logout {
+    color: #928374;
+    background-color: transparent;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-right: 10px;
+    transition: 0.2s;
+}
+    #custom-logout:hover { 
+        color: #a89984;
+        transition: 0.2s;
+    }
