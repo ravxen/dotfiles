@@ -15,6 +15,8 @@ Script is not available as of now.
 ## Applications
 Shell: zsh + oh-my-zsh
 
+Terminal: kitty
+
 Window Manager: hyprland
 
 Status Bar: waybar
