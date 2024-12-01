@@ -1,7 +1,7 @@
 /* General */
 
 * {
-    font-family: Iosevka, Iosevka NF;
+    font-family: Iosevka Term, Iosevka NF;
     font-size: 13px;
     font-weight: bold;
     padding: 0px;
@@ -15,8 +15,6 @@ window#waybar {
 }
 
     window#waybar > box {
-        border-radius: 8px;
-        margin: 4px 8px 8px 8px;
         background-color: rgba(40, 40, 40, 0.9);
         box-shadow: 0px 2px 4px 0px #161819;
     }
@@ -52,16 +50,15 @@ button {
 
 /* General styling for modules */
 #clock, #cpu, #temperature, #memory, #network, #pulseaudio, #workspaces, #window, #power-profiles-daemon, #custom-notification, #custom-arch, #custom-btop, #custom-poweroff, #custom-reboot, #custom-bios, #custom-sleep, #custom-logout, #language {
-    background-color: #504945;
-    border-radius: 8px;
-    margin-bottom: 5px; margin-top: 5px;
+    background-color: #282828;
+    border-bottom: 3px solid #ebdbb2;
+    color: #ebdbb2;
+    font-weight: bold;
 }
 
 /* Single Modules */
 #clock {
     padding: 0px 7px 0px 7px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 #tray {
@@ -69,161 +66,171 @@ button {
 }
 
 #cpu {
-    padding-left: 7px;
-    padding-right: 13px;
+    padding: 0px 13px 0px 8px;
+    color: #a89984;
+    border-bottom: 3px solid #a89984;
 }
 
 #temperature {
-    padding-left: 7px;
-    padding-right: 8px;
+    padding: 0px 8px 0px 8px;
+    color: #a89984;
+    border-bottom: 3px solid #a89984;
 }
 
 #memory {
-    padding-left: 7px;
-    padding-right: 15px;
+    padding: 0px 13px 0px 8px;
+    color: #a89984;
+    border-bottom: 3px solid #a89984;
 }
 
 #network {
-    padding: 0px 15px 0px 5px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    margin-left: -3px;
-}
-
-#language {
-    padding: 0px 7px 0px 7px;
+    padding: 0px 13px 0px 10px;
+    color: #458588;
+    border-bottom: 3px solid #458588;
 }
 
 #pulseaudio {
-    padding: 0px 5px 0px 7px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    padding: 0px 9px 0px 8px;
+    color: #b16296;
+    border-bottom: 3px solid #b16296;
 }
 
 #workspaces {
     padding: 0px 5px 0px 5px;
-    transition: 0.2s;
+    transition: 0.3s;
+    color: #d65d0e;
+    border-bottom: 3px solid #d65d0e;
 }
     #workspaces button {
         color: #a89984;
-        transition: 0.2s;
+        transition: 0.3s;
     }
         #workspaces button.active {
-            color: #d79921;
-            transition: 0.2s;
+            color: #d65d0e;
+            transition: 0.3s;
         }
 
 #window {
-    padding: 5px 8px 5px 8px;
+    background-color: transparent;
+    padding: 0px 8px 0px 8px;
+    border-bottom: 3px solid transparent;
 }
 
 #power-profiles-daemon {
     color: #d79921;
-    padding: 0px 8px 0px 5px;
-    transition: 0.2s;
+    padding: 0px 8px 0px 8px;
+    transition: 0.4s;
+    border-bottom: 3px solid #fabd2f;
 }
     #power-profiles-daemon:hover {
         color: #fabd2f;
-        transition: 0.2s;
+        transition: 0.4s;
+        border-bottom: 3px solid #fabd2f;
     }
         #power-profiles-daemon.balanced {
-            padding-right: 10px;
             color: #458588;
-            transition: 0.2s;
+            transition: 0.3s;
+            border-bottom: 3px solid #83a598;
         }
             #power-profiles-daemon.balanced:hover {
                 color: #83a598;
-                transition: 0.2s;
+                transition: 0.3s;
+                border-bottom: 3px solid #83a598;
             }
         #power-profiles-daemon.power-saver {
-            padding-right: 11px;
             color: #689d6a;
-            transition: 0.2s;
+            transition: 0.3s;
+            border-bottom: 3px solid #8ec07c;
         }
             #power-profiles-daemon.power-saver:hover {
                 color: #8ec07c;
-                transition: 0.2s;
+                transition: 0.3s;
+                border-bottom: 3px solid #8ec07c;
             }
 
 /* Custom Modules */
 #custom-notification {
-    padding: 0px 10px 0px 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    margin-left: -3px;
+    padding: 0px 8px 0px 5px;
+    color: #d79921;
+    border-bottom: 3px solid #d79921;
+    transition: 0.3s;
+}
+
+#custom-notification:hover {
+    color: #fabd2f;
+    border-bottom: 3px solid #fabd2f;
+    transition: 0.3s;
 }
 
 #custom-arch {
     color: #1793d1;
-    padding: 0px 10px 0px 5px;
-    transition: 0.2s;
+    padding: 0px 8px 0px 5px;
+    transition: 0.3s;
+    border-bottom: 3px solid #1793d1;
 }
     #custom-arch:hover {
         color: #1ba8ef;
-        transition: 0.2s;
+        transition: 0.3s;
+        border-bottom: 3px solid #1ba8ef;
     }
 
 #custom-poweroff {
-    color: #cc241d;
+    padding: 0px 8px 0px 8px;
+    color: #665c54;
     background-color: transparent;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin-left: 3px;
-    padding-left: 7px;
-    padding-right: 10px;
-    transition: 0.2s;
+    transition: 0.3s;
+    border-bottom: 0px;
 }
     #custom-poweroff:hover {
-        color: #fb4934;
-        transition: 0.2s;
+        transition: 0.3s;
+        color: #cc241d;
     }
 
 #custom-reboot {
-    color: #d65d0e;
+    color: #665c54;
     background-color: transparent;
-    border-radius: 0px;
-    padding-left: 4px;
-    padding-right: 14px;
-    transition: 0.2s;
+    transition: 0.3s;
+    padding: 0px 8px 0px 8px;
+    border-bottom: 0px;
 }
     #custom-reboot:hover {
         color: #fe8019;
-        transition: 0.2s;
+        transition: 0.3s;
     }
 
 #custom-bios {
-    color: #b16286;
+    color: #665c54;
+    padding: 0px 8px 0px 8px;
     background-color: transparent;
-    border-radius: 0px;
-    padding-right: 8px;
-    transition: 0.2s;
+    transition: 0.3s;
+    border-bottom: 0px;
 }
     #custom-bios:hover {
         color: #d3869b;
-        transition: 0.2s;
+        transition: 0.3s;
     }
 
 #custom-sleep {
-    color: #d79921;
+    color: #665c54;
+    padding: 0px 8px 0px 2px;
     background-color: transparent;
-    border-radius: 0px;
-    padding-right: 15px;
-    transition: 0.2s;
+    transition: 0.3s;
+    border-bottom: 0px;
 }
     #custom-sleep:hover {
-        color: #fabd2f;
-        transition: 0.2s;
+        color: #458588;
+        transition: 0.3s;
     }
 
 #custom-logout {
-    color: #928374;
+    color: #665c54;
+    padding: 0px 8px 0px 8px;
     background-color: transparent;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
     padding-right: 10px;
-    transition: 0.2s;
+    transition: 0.3s;
+    border-bottom: 0px;
 }
     #custom-logout:hover { 
-        color: #a89984;
-        transition: 0.2s;
+        color: #bdae93;
+        transition: 0.3s;
     }
