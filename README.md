@@ -3,14 +3,16 @@ Welcome to my dotfiles page! I'm new to the whole ricing, editing configs and cr
 
 Current colorscheme: Gruvbox Dark
 
-To-Do:
+To-Do before script:
 - Replace waybar with ags
-- Improve waybar design
-- change shadow color of hyprland windows
-- 
-## Installation
- 
+- Improve consistency
+- Light Mode (?)
+
+## 
 Script is not available as of now.
+
+You can git clone the repository and install it manually. 
+Files are always the most signifanct and polished version.
 
 ## Applications
 Shell: zsh + oh-my-zsh
@@ -23,16 +25,16 @@ Status Bar: waybar
 
 Application Launcher: rofi
 
-File Manager: yazi
+File Manager: yazi (tui)
 
 Notification Center: swaync
 
 --
 
-Audio: pipewire + pavucontrol
+Audio: pipewire, wireplumber + pulsemixer (tui)
 
-Network Manager: networkmanager
+Network Manager: networkmanager (cli)
 
-Bluetooth: bluez
+Bluetooth: bluez + bluetui (tui)
 
 ## Troubleshooting
