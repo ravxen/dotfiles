@@ -18,6 +18,8 @@ Shell: zsh + oh-my-zsh
 
 Terminal: kitty
 
+Clipboard: cliphist
+
 Window Manager: hyprland
 
 Status Bar: waybar
