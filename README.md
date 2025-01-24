@@ -6,7 +6,6 @@ Current colorscheme: Gruvbox Dark
 To-Do before script:
 - Replace waybar with ags
 - Improve consistency
-- Light Mode (?)
 
 ## 
 Script is not available as of now.
@@ -16,25 +15,14 @@ Files are always the most signifanct and polished version.
 
 ## Applications
 Shell: zsh + oh-my-zsh
-
 Terminal: kitty
-
 Window Manager: hyprland
-
 Status Bar: waybar
-
-Application Launcher: rofi
-
-File Manager: yazi (tui)
-
+Application Launcher: fuzzel
+File Manager: yazi
 Notification Center: swaync
-
---
-
-Audio: pipewire, wireplumber + pulsemixer (tui)
-
-Network Manager: networkmanager (cli)
-
-Bluetooth: bluez + bluetui (tui)
+Audio: pipewire, wireplumber + pulsemixer
+Network Manager: networkmanager
+Bluetooth: bluez + bluetui
 
 ## Troubleshooting
