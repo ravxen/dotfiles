@@ -1,7 +1,7 @@
 # My dotfiles
 Welcome to my dotfiles page! I'm new to the whole ricing, editing configs and creating scripts, so it will take some time, until this page looks nice.
 
-Current colorscheme: Gruvbox Dark
+Colorscheme: Gruvbox Dark
 
 To-Do before script:
 - Replace waybar with ags
