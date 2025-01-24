@@ -1,19 +1,24 @@
+###########
+## ZSHRC ##
+###########
+
+# UWSM Autostart
+if uwsm check may-start && uwsm select; then
+	exec systemd-cat -t uwsm_start uwsm start default
+fi
+
 ## ZSH
-# Lines configured by zsh-newuser-install
-HISTFILE=/home/$USER/.config/zsh/.histfile
+HISTFILE=$HOME/.config/zsh/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/jschmidt/.zshrc'
 
+bindkey -e
+zstyle :compinstall filename '/home/jschmidt/.zshrc'
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
 
 # Variables
-EDITOR=nano
+EDITOR="nano"
 CONFIG="$HOME/.config"
 
 # Aliases
@@ -25,7 +30,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## Oh my zsh
-ZSH=$HOME/.config/oh-my-zsh
+ZSH=$CONFIG/oh-my-zsh
 
 # Theming
 ZSH_THEME="gruvbox"
