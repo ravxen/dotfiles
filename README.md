@@ -11,7 +11,7 @@ To-Do before script:
 Script is not available as of now.
 
 You can git clone the repository and install it manually. 
-Files are always the most signifanct and polished version.
+Files are always the most significant versions.
 
 ## Applications
 Shell: zsh + oh-my-zsh
