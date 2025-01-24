@@ -14,13 +14,13 @@ You can git clone the repository and install it manually.
 Files are always the most significant versions.
 
 ## Applications
+Window Manager: hyprland + uwsm
+
 Shell: zsh + oh-my-zsh
 
 Terminal: kitty
 
 Clipboard: cliphist
-
-Window Manager: hyprland
 
 Status Bar: waybar
 
@@ -37,5 +37,6 @@ Network Manager: networkmanager
 Bluetooth: bluez + bluetui
 
 ## Important
+Applications like "swaync", "waybar", "pipewire" etc. run as a systemd service.
 
 ## Troubleshooting
