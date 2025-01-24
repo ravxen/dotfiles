@@ -36,4 +36,6 @@ Network Manager: networkmanager
 
 Bluetooth: bluez + bluetui
 
+## Important
+
 ## Troubleshooting
