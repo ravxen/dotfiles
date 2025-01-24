@@ -15,14 +15,23 @@ Files are always the most signifanct and polished version.
 
 ## Applications
 Shell: zsh + oh-my-zsh
+
 Terminal: kitty
+
 Window Manager: hyprland
+
 Status Bar: waybar
+
 Application Launcher: fuzzel
+
 File Manager: yazi
+
 Notification Center: swaync
+
 Audio: pipewire, wireplumber + pulsemixer
+
 Network Manager: networkmanager
+
 Bluetooth: bluez + bluetui
 
 ## Troubleshooting
